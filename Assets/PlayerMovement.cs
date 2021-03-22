@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D cc;
     Animator anim;
     AudioManager audioManager;
+    AnimatorSpawner animatorSpawner;
     [SerializeField] GameObject coin;
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpPower;
@@ -20,50 +21,48 @@ public class PlayerMovement : MonoBehaviour
     bool rotated;
     bool sprinting;
     bool jumpOrFall;
-    bool jumped;
-    bool jump;
     bool justFalled;
     bool canMove;
-    bool isRectangle;
-    bool isSquare;
-    bool isCircle;
+    bool isBasicPlayer;
+    bool isSecondTypePlayer;
+    bool isThirdTypePlayer;
+    bool flip; // TRUE = RIGHT; FALSE = LEFT
     float chargeJump;
+
     // Start is called before the first frame update
     void Start()
     {
+        animatorSpawner = AnimatorSpawner.instance;
         audioManager = AudioManager.instance;
         rb = GetComponent<Rigidbody2D>();
         trans = GetComponent<Transform>();
         anim = GetComponent<Animator>();
         cc = GetComponent<CapsuleCollider2D>();
-        jumped = false;
-        jump = false;
         canMove = true;
         isGrounded = true;
+        flip = true;
 
-        isRectangle = true;
-        isSquare = false;
-        isCircle = false;
+        isBasicPlayer = true;
+        isSecondTypePlayer = false;
+        isThirdTypePlayer = false;
     }
 
     void Update() {
         if (canMove) {
             if (Input.GetKeyDown(KeyCode.Q)) {
-                // Transform in Square
+                // Transform in ThirdType
                 //isRectangle = false;
                 //isCircle = false;
                 //isSquare = true;
-                anim.SetTrigger("Transform_To_Square_From_Rectangle");
             }
             if (Input.GetKeyDown(KeyCode.E)) {
-                // Transform in Circle
+                // Transform in SecondType
                 //isRectangle = false;
                 //isCircle = true;
                 //isSquare = false;
-                anim.SetTrigger("Transform_To_Circle_From_Rectangle");
             }
             if (Input.GetKeyDown(KeyCode.R)) {
-                // Transform in Rectangle
+                // Transform in BasicType
                 //isRectangle = true;
                 //isCircle = false;
                 //isSquare = false;
@@ -138,25 +137,49 @@ public class PlayerMovement : MonoBehaviour
     // MOVEMENT SETTINGS
     //
     private void ManageMovement() {
-        if (isRectangle) {
+        if (isBasicPlayer) {
             // RECTANGLE MOVEMENT
             //
             // RIGHT MOVEMENT CROUCHED OR NOT
             if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
-                MoveSprintRectangle(moveSpeed - crouchSpeed, 1f, 1);
-                ResetAfterMovementRectangle();
+                if (!flip) {
+                    flip = true;
+                    transform.localRotation = Quaternion.Euler(0,0,0);
+                }
+                MovePlayer(moveSpeed - crouchSpeed, 1f, 1);
+                anim.SetBool("Run", true);
             } else if (Input.GetKey(KeyCode.D)) {
-                MoveSprintRectangle(moveSpeed, 1f, 1);
-                RotatePlayerRectangle(false);
+                if (!flip) {
+                    flip = true;
+                    transform.localRotation = Quaternion.Euler(0,0,0);
+                }
+                MovePlayer(moveSpeed, 1f, 1);
+                anim.SetBool("Run", true);
             } 
             // LEFT MOVEMENT CROUCHED OR NOT
             if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
-                MoveSprintRectangle(moveSpeed - crouchSpeed, 1f, 0);
-                ResetAfterMovementRectangle();
+                if (flip) {
+                    flip = false;
+                    transform.localRotation = Quaternion.Euler(0,180,0);
+                }
+                MovePlayer(moveSpeed - crouchSpeed, 1f, 0);
+                anim.SetBool("Run", true);
             } else if (Input.GetKey(KeyCode.A)) {
-                MoveSprintRectangle(moveSpeed, 1f, 0);
-                RotatePlayerRectangle(true);
+                if (flip) {
+                    flip = false;
+                    transform.localRotation = Quaternion.Euler(0,180,0);
+                }
+                MovePlayer(moveSpeed, 1f, 0);
+                anim.SetBool("Run", true);
             } 
+
+            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
+                anim.SetBool("Run", false);
+                anim.SetTrigger("StopRun");
+                if (isGroundedCheck()) {
+                    animatorSpawner.SpawnAnimation("stopDust");
+                }
+            }
             // CHARGE JUMP / IS LESS THAN 0.2 SECONDS HOLD, NORMAL JUMP
             if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGroundedCheck()) {
                 chargeJump += Time.deltaTime;
@@ -164,6 +187,8 @@ public class PlayerMovement : MonoBehaviour
             // JUMP CODE
             if ((Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Space)) && isGroundedCheck()) {
                 anim.SetTrigger("Jump");
+                audioManager.PlaySound("jump");
+                animatorSpawner.SpawnAnimation("jumpDust");
                 rb.drag = 0;
                 if (chargeJump < 0.2f) {
                     rb.velocity = Vector2.up * jumpPower;
@@ -174,20 +199,32 @@ public class PlayerMovement : MonoBehaviour
             }
             // RESET THE RECTANGLE ANGLE
             if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) {
-                ResetAfterMovementRectangle();
                 rb.velocity = new Vector2(0, rb.velocity.y);
             }
             // CROUCH
             if (Input.GetKey(KeyCode.S)) {
-                anim.SetBool("Crouch", true);
+                // CROUCH
             } 
             // UNCROUCH
             if (Input.GetKeyUp(KeyCode.S)) {
-                anim.SetBool("Crouch", false);
+                // FROM CROUCH TO IDLe
             }
-        } else if (isSquare) {
+        } else if (isSecondTypePlayer) {
             // SQUARE MOVEMENT
-        } else if (isCircle) {
+            //
+            // RIGHT MOVEMENT
+            /*if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
+                MovePlayer(moveSpeed - crouchSpeed, 1f, 1);
+            } else if (Input.GetKey(KeyCode.D)) {
+                MovePlayer(moveSpeed, 1f, 1);
+            }
+            // LEFT MOVEMENT
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
+                MovePlayer(moveSpeed - crouchSpeed, 1f, 0);
+            } else if (Input.GetKey(KeyCode.A)) {
+                MovePlayer(moveSpeed, 1f, 0);
+            } */
+        } else if (isThirdTypePlayer) {
             // CIRCLE MOVEMENT
         }
     }
@@ -212,11 +249,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if (col.gameObject.tag == "Enemy") {
             setCanMove();
-            ResetAfterMovementRectangle();
             if (Input.GetKey(KeyCode.S)) {
                 anim.SetBool("Crouch", false);
             }
-            audioManager.PlaySound("damage_" + (int)Random.Range(1, 5));
+            audioManager.PlaySound("damage");
             Vector2 playerPos = transform.position;
             Vector2 dir = col.GetContact(0).point - playerPos;
 
@@ -227,9 +263,17 @@ public class PlayerMovement : MonoBehaviour
             anim.SetTrigger("Damage");
             Invoke("setCanMove", 0.2f);
         }
+        if (col.gameObject.tag == "Ground") {
+            audioManager.PlaySound("landing");
+            animatorSpawner.SpawnAnimation("fallDust");
+        }
     }
 
-    private void MoveSprintRectangle(float moveSpeed, float sprintSpeed, int direction) {
+    private void RandomFootstepAudioGenerator() {
+        audioManager.PlaySound("footstep_" + (int)Random.Range(1,4));
+    }
+
+    private void MovePlayer(float moveSpeed, float sprintSpeed, int direction) {
         if (isGrounded) {
             rb.drag = 0;
         }
@@ -238,66 +282,11 @@ public class PlayerMovement : MonoBehaviour
         } else rb.velocity = new Vector2(1 * moveSpeed * sprintSpeed, rb.velocity.y);
     }
 
-    private void ResetAfterMovementRectangle() {
-        if (isGroundedCheck()) {
-            rb.drag = 10;
-        }
-        trans.rotation = Quaternion.identity;
-        rotated = false;
-        sprinting = false;
-        
-    }
-
     private void setCanMove() {
         canMove = !canMove;
     }
 
-    private void RotatePlayerRectangle(bool left) {
-        if (left) {
-            if (!rotated) {
-                rotated = true;
-                trans.Rotate(new Vector3(0,0,8f));
-            }
-        } else {
-            if (!rotated) {
-                rotated = true;
-                trans.Rotate(new Vector3(0,0,-8f));
-            }
-        }
-    }
-    private void RotatePlayerSquare(bool left, bool sprint) {
-        if (!sprint) {
-            if (left) {
-                if (!rotated) {
-                    rotated = true;
-                    trans.Rotate(new Vector3(0,0,8f));
-                }
-                if (sprinting) {
-                    sprinting = false;
-                    trans.Rotate(new Vector3(0,0,-12f));
-                }
-            } else {
-                if (!rotated) {
-                    rotated = true;
-                    trans.Rotate(new Vector3(0,0,-8f));
-                }
-                if (sprinting) {
-                    sprinting = false;
-                    trans.Rotate(new Vector3(0,0,12f));
-                }
-            }
-        } else {
-            if (!left) {
-                if (!sprinting) {
-                    sprinting = true;
-                    trans.Rotate(new Vector3(0,0,-12f));
-                }
-            } else {
-               if (!sprinting) {
-                    sprinting = true;
-                    trans.Rotate(new Vector3(0,0,12f));
-                } 
-            }
-        }
+    private void Flip() {
+       
     }
 }

@@ -62,10 +62,4 @@ public class AudioManager : MonoBehaviour
         // NO SOUND WITH clipName
         Debug.LogWarning("No clip found");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
