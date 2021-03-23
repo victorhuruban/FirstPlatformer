@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float knockBackForce;
     [SerializeField] int crouchSpeed;
     [SerializeField] private LayerMask platformLayerMask;
+    bool inAir;
     bool isGrounded;
     bool rotated;
     bool sprinting;
@@ -50,22 +51,13 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         if (canMove) {
             if (Input.GetKeyDown(KeyCode.Q)) {
-                // Transform in ThirdType
-                //isRectangle = false;
-                //isCircle = false;
-                //isSquare = true;
+                // Transform to first character
             }
             if (Input.GetKeyDown(KeyCode.E)) {
-                // Transform in SecondType
-                //isRectangle = false;
-                //isCircle = true;
-                //isSquare = false;
+                // Transform to second character
             }
             if (Input.GetKeyDown(KeyCode.R)) {
-                // Transform in BasicType
-                //isRectangle = true;
-                //isCircle = false;
-                //isSquare = false;
+                // Transform to third character
             }
 
             ManageMovement();
@@ -142,33 +134,21 @@ public class PlayerMovement : MonoBehaviour
             //
             // RIGHT MOVEMENT CROUCHED OR NOT
             if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
-                if (!flip) {
-                    flip = true;
-                    transform.localRotation = Quaternion.Euler(0,0,0);
-                }
+                Flip(0);
                 MovePlayer(moveSpeed - crouchSpeed, 1f, 1);
                 anim.SetBool("Run", true);
             } else if (Input.GetKey(KeyCode.D)) {
-                if (!flip) {
-                    flip = true;
-                    transform.localRotation = Quaternion.Euler(0,0,0);
-                }
+                Flip(0);
                 MovePlayer(moveSpeed, 1f, 1);
                 anim.SetBool("Run", true);
             } 
             // LEFT MOVEMENT CROUCHED OR NOT
             if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
-                if (flip) {
-                    flip = false;
-                    transform.localRotation = Quaternion.Euler(0,180,0);
-                }
+                Flip(1);
                 MovePlayer(moveSpeed - crouchSpeed, 1f, 0);
                 anim.SetBool("Run", true);
             } else if (Input.GetKey(KeyCode.A)) {
-                if (flip) {
-                    flip = false;
-                    transform.localRotation = Quaternion.Euler(0,180,0);
-                }
+                Flip(1);
                 MovePlayer(moveSpeed, 1f, 0);
                 anim.SetBool("Run", true);
             } 
@@ -210,23 +190,11 @@ public class PlayerMovement : MonoBehaviour
                 // FROM CROUCH TO IDLe
             }
         } else if (isSecondTypePlayer) {
-            // SQUARE MOVEMENT
-            //
-            // RIGHT MOVEMENT
-            /*if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
-                MovePlayer(moveSpeed - crouchSpeed, 1f, 1);
-            } else if (Input.GetKey(KeyCode.D)) {
-                MovePlayer(moveSpeed, 1f, 1);
-            }
-            // LEFT MOVEMENT
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
-                MovePlayer(moveSpeed - crouchSpeed, 1f, 0);
-            } else if (Input.GetKey(KeyCode.A)) {
-                MovePlayer(moveSpeed, 1f, 0);
-            } */
+            // SECOND CHARACTER MOVEMENT
         } else if (isThirdTypePlayer) {
-            // CIRCLE MOVEMENT
+            // THIRD CHARACTER MOVEMENT
         }
+        Debug.Log(inAir);
     }
 
     void FixedUpdate() {
@@ -236,17 +204,14 @@ public class PlayerMovement : MonoBehaviour
     private bool isGroundedCheck() {
         float extraHeightTest = .05f;
         RaycastHit2D rchit = Physics2D.BoxCast(cc.bounds.center, cc.bounds.size,  0f, Vector2.down, extraHeightTest, platformLayerMask);
-        Debug.Log(rchit.collider != null);
-        return rchit.collider != null;
+        bool temp = rchit.collider != null;
+        if (temp) {
+            inAir = false;
+        } else inAir = true;
+        return temp;
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        if (col.gameObject.tag == "Coin") { // COIN COLLECTION
-            audioManager.PlaySound("coin_collect");
-            Vector2 loc = col.gameObject.transform.position;
-            Instantiate(coin, loc, Quaternion.identity);
-            Destroy(col.gameObject);
-        }
         if (col.gameObject.tag == "Enemy") {
             setCanMove();
             if (Input.GetKey(KeyCode.S)) {
@@ -264,8 +229,18 @@ public class PlayerMovement : MonoBehaviour
             Invoke("setCanMove", 0.2f);
         }
         if (col.gameObject.tag == "Ground") {
+            inAir = false;
             audioManager.PlaySound("landing");
             animatorSpawner.SpawnAnimation("fallDust");
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.tag == "Coin") { // COIN COLLECTION
+            audioManager.PlaySound("coin_collect");
+            Vector2 loc = col.gameObject.transform.position;
+            Instantiate(coin, loc, Quaternion.identity);
+            Destroy(col.gameObject);
         }
     }
 
@@ -286,7 +261,17 @@ public class PlayerMovement : MonoBehaviour
         canMove = !canMove;
     }
 
-    private void Flip() {
-       
+    private void Flip(int type) {
+        if (type == 0) {
+            if (!flip) {
+                flip = true;
+                transform.localRotation = Quaternion.Euler(0,0,0);
+            }
+        } else if (type == 1) {
+            if (flip) {
+                flip = false;
+                transform.localRotation = Quaternion.Euler(0,180,0);
+            }
+        }
     }
 }
