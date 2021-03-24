@@ -24,9 +24,9 @@ public class AnimatorSpawner : MonoBehaviour
             GameObject stopDustObj = Instantiate(stopDust, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             Transform temp = GetComponent<Transform>();
             if (temp.rotation.y == -1) {
-                stopDustObj.GetComponent<SpriteRenderer>().flipX = false;
+                stopDustObj.transform.Rotate(new Vector3(0,0,0));
             } else if (temp.rotation.y == 0) {
-                stopDustObj.GetComponent<SpriteRenderer>().flipX = true;
+                stopDustObj.transform.Rotate(new Vector3(0,180,0));
             }
         } else if (spawnAnimationObject == "stompDust") {
             Instantiate(stompDust, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);

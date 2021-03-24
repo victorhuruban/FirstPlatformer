@@ -1,0 +1,2624 @@
+fileFormatVersion: 2
+guid: 006aabe74fe840843a21e75cf41b7480
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1952878276727618429
+    second: Frederick_NoSword_0
+  - first:
+      213: 4420092310236006600
+    second: Frederick_NoSword_1
+  - first:
+      213: -2457022402438061242
+    second: Frederick_NoSword_2
+  - first:
+      213: -6915159375769705238
+    second: Frederick_NoSword_3
+  - first:
+      213: -7663692655147875384
+    second: Frederick_NoSword_4
+  - first:
+      213: 2009703521781700523
+    second: Frederick_NoSword_5
+  - first:
+      213: -1698930926309411656
+    second: Frederick_NoSword_6
+  - first:
+      213: -4931114760778385887
+    second: Frederick_NoSword_7
+  - first:
+      213: -7748102864069259791
+    second: Frederick_NoSword_8
+  - first:
+      213: 1739566832658010173
+    second: Frederick_NoSword_9
+  - first:
+      213: 3844369041652037327
+    second: Frederick_NoSword_10
+  - first:
+      213: 6661509231271027432
+    second: Frederick_NoSword_11
+  - first:
+      213: -5764997377959606295
+    second: Frederick_NoSword_12
+  - first:
+      213: -3307168840126435290
+    second: Frederick_NoSword_13
+  - first:
+      213: -248979668421186383
+    second: Frederick_NoSword_14
+  - first:
+      213: 4000579171631476187
+    second: Frederick_NoSword_15
+  - first:
+      213: -7149430760258151414
+    second: Frederick_NoSword_16
+  - first:
+      213: 2946581758241231260
+    second: Frederick_NoSword_17
+  - first:
+      213: -2370576050205439815
+    second: Frederick_NoSword_18
+  - first:
+      213: -2768949814752664599
+    second: Frederick_NoSword_19
+  - first:
+      213: 7840791761340787238
+    second: Frederick_NoSword_20
+  - first:
+      213: -3131978421719520795
+    second: Frederick_NoSword_21
+  - first:
+      213: 3234622271897483067
+    second: Frederick_NoSword_22
+  - first:
+      213: -2838937530523968590
+    second: Frederick_NoSword_23
+  - first:
+      213: 31726638928008061
+    second: Frederick_NoSword_24
+  - first:
+      213: -8031150682937400359
+    second: Frederick_NoSword_25
+  - first:
+      213: 3626803856909900785
+    second: Frederick_NoSword_26
+  - first:
+      213: -9194720374698434209
+    second: Frederick_NoSword_27
+  - first:
+      213: -7881603473117052215
+    second: Frederick_NoSword_28
+  - first:
+      213: 7247679119791224650
+    second: Frederick_NoSword_29
+  - first:
+      213: 6286698831448679418
+    second: Frederick_NoSword_30
+  - first:
+      213: 7514545680110978523
+    second: Frederick_NoSword_31
+  - first:
+      213: 6298526737278582500
+    second: Frederick_NoSword_32
+  - first:
+      213: -4855957904138157538
+    second: Frederick_NoSword_33
+  - first:
+      213: -2948013372248363559
+    second: Frederick_NoSword_34
+  - first:
+      213: -2190666553424022800
+    second: Frederick_NoSword_35
+  - first:
+      213: -6676441565253996303
+    second: Frederick_NoSword_36
+  - first:
+      213: 7475915071034495139
+    second: Frederick_NoSword_37
+  - first:
+      213: -7789882810206865530
+    second: Frederick_NoSword_38
+  - first:
+      213: -1644555177985293048
+    second: Frederick_NoSword_39
+  - first:
+      213: -3613374174461034522
+    second: Frederick_NoSword_40
+  - first:
+      213: 8176490094656720545
+    second: Frederick_NoSword_41
+  - first:
+      213: 2425380350164077526
+    second: Frederick_NoSword_42
+  - first:
+      213: -3229251006447183411
+    second: Frederick_NoSword_43
+  - first:
+      213: -4834177128115276154
+    second: Frederick_NoSword_44
+  - first:
+      213: 5022657865673514926
+    second: Frederick_NoSword_45
+  - first:
+      213: -8617769349000364261
+    second: Frederick_NoSword_46
+  - first:
+      213: 4753811706197843358
+    second: Frederick_NoSword_47
+  - first:
+      213: -3452188894171282912
+    second: Frederick_NoSword_48
+  - first:
+      213: -3875279332390717261
+    second: Frederick_NoSword_49
+  - first:
+      213: 5235518584292648252
+    second: Frederick_NoSword_50
+  - first:
+      213: 966481143878837659
+    second: Frederick_NoSword_51
+  - first:
+      213: 4126394991594020878
+    second: Frederick_NoSword_52
+  - first:
+      213: -8777830140261060721
+    second: Frederick_NoSword_53
+  - first:
+      213: 7866411220291737049
+    second: Frederick_NoSword_54
+  - first:
+      213: 6837520277327676560
+    second: Frederick_NoSword_55
+  - first:
+      213: 1823193644399614221
+    second: Frederick_NoSword_56
+  - first:
+      213: -4489994609994106779
+    second: Frederick_NoSword_57
+  - first:
+      213: 4034554925318979172
+    second: Frederick_NoSword_58
+  - first:
+      213: -1137023396171808972
+    second: Frederick_NoSword_59
+  - first:
+      213: -9020762914753758071
+    second: Frederick_NoSword_60
+  - first:
+      213: 1949088476788843670
+    second: Frederick_NoSword_61
+  - first:
+      213: -3135028977424061244
+    second: Frederick_NoSword_62
+  - first:
+      213: 536361164113971071
+    second: Frederick_NoSword_63
+  - first:
+      213: 5140510384473880627
+    second: Frederick_NoSword_64
+  - first:
+      213: 8942477343527242550
+    second: Frederick_NoSword_65
+  - first:
+      213: -6109157580760322564
+    second: Frederick_NoSword_66
+  - first:
+      213: -3993122689476330666
+    second: Frederick_NoSword_67
+  - first:
+      213: 8924829236423078584
+    second: Frederick_NoSword_68
+  - first:
+      213: 9215387032177976020
+    second: Frederick_NoSword_69
+  - first:
+      213: 301112406289431393
+    second: Frederick_NoSword_70
+  - first:
+      213: -7755580228064665454
+    second: Frederick_NoSword_71
+  - first:
+      213: -6357928372596681067
+    second: Frederick_NoSword_72
+  - first:
+      213: 7896387487897686727
+    second: Frederick_NoSword_73
+  - first:
+      213: -7020255603940763465
+    second: Frederick_NoSword_74
+  - first:
+      213: 4156761474009775983
+    second: Frederick_NoSword_75
+  - first:
+      213: -3127452754460690039
+    second: Frederick_NoSword_76
+  - first:
+      213: -4836868510131462878
+    second: Frederick_NoSword_77
+  - first:
+      213: -8801763423376219518
+    second: Frederick_NoSword_78
+  - first:
+      213: 901156188394492914
+    second: Frederick_NoSword_79
+  - first:
+      213: 766119768811366998
+    second: Frederick_NoSword_80
+  - first:
+      213: 6789489890483755460
+    second: Frederick_NoSword_81
+  - first:
+      213: -4388384633593898625
+    second: Frederick_NoSword_82
+  - first:
+      213: 1463659662477203376
+    second: Frederick_NoSword_83
+  - first:
+      213: -3241162992960834712
+    second: Frederick_NoSword_84
+  - first:
+      213: -5957109182937591320
+    second: Frederick_NoSword_85
+  - first:
+      213: -744898682936191168
+    second: Frederick_NoSword_86
+  - first:
+      213: 2557288226095145644
+    second: Frederick_NoSword_87
+  - first:
+      213: -7130813166287230736
+    second: Frederick_NoSword_88
+  - first:
+      213: -4397197722408004784
+    second: Frederick_NoSword_89
+  - first:
+      213: -555031311337381545
+    second: Frederick_NoSword_90
+  - first:
+      213: -735140230957779620
+    second: Frederick_NoSword_91
+  - first:
+      213: -5050785600233980499
+    second: Frederick_NoSword_92
+  - first:
+      213: 2191246361452704554
+    second: Frederick_NoSword_93
+  - first:
+      213: 1060915157469941336
+    second: Frederick_NoSword_94
+  - first:
+      213: -7313481537814642958
+    second: Frederick_NoSword_95
+  - first:
+      213: -5470445972840407481
+    second: Frederick_NoSword_96
+  - first:
+      213: 326591010207268921
+    second: Frederick_NoSword_97
+  - first:
+      213: -907060471208960389
+    second: Frederick_NoSword_98
+  - first:
+      213: -3519503803536859788
+    second: Frederick_NoSword_99
+  - first:
+      213: 4522257762905542086
+    second: Frederick_NoSword_100
+  - first:
+      213: 974193128484736814
+    second: Frederick_NoSword_101
+  - first:
+      213: 3608895912938754747
+    second: Frederick_NoSword_102
+  - first:
+      213: -5956295793414023355
+    second: Frederick_NoSword_103
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frederick_NoSword_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b3de522740a1b10800000000000000
+      internalID: 1952878276727618429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c88d0a9982575d30800000000000000
+      internalID: 4420092310236006600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643a0819427e6edd0800000000000000
+      internalID: -2457022402438061242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4e8029f2b6800a0800000000000000
+      internalID: -6915159375769705238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c30426522815a590800000000000000
+      internalID: -7663692655147875384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba756a784b6e3eb10800000000000000
+      internalID: 2009703521781700523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4f667e25f2c68e0800000000000000
+      internalID: -1698930926309411656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1267e115049219bb0800000000000000
+      internalID: -4931114760778385887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd07ff0f75397490800000000000000
+      internalID: -7748102864069259791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30d1a351de242810800000000000000
+      internalID: 1739566832658010173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6bd296641f95530800000000000000
+      internalID: 3844369041652037327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e225e50a5f627c50800000000000000
+      internalID: 6661509231271027432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7c8a3dd6d9effa0800000000000000
+      internalID: -5764997377959606295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620f50846739a12d0800000000000000
+      internalID: -3307168840126435290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bce57b8f427b8cf0800000000000000
+      internalID: -248979668421186383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddabe48f89e48730800000000000000
+      internalID: 4000579171631476187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cdf845a9e18cc90800000000000000
+      internalID: -7149430760258151414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c915d995f7c54e820800000000000000
+      internalID: 2946581758241231260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_18
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8c47664a50a1fd0800000000000000
+      internalID: -2370576050205439815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3a8c260d6b299d0800000000000000
+      internalID: -2768949814752664599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ae68c809610dc60800000000000000
+      internalID: 7840791761340787238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92839283af884d0800000000000000
+      internalID: -3131978421719520795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37340b81dfa3ec20800000000000000
+      internalID: 3234622271897483067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb18997b511a98d0800000000000000
+      internalID: -2838937530523968590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d739833c537b07000800000000000000
+      internalID: 31726638928008061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d361e5310f9b8090800000000000000
+      internalID: -8031150682937400359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb912964eef45230800000000000000
+      internalID: 3626803856909900785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51ad01f88ac56080800000000000000
+      internalID: -9194720374698434209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c28f54566bee9290800000000000000
+      internalID: -7881603473117052215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47fb2572cde49460800000000000000
+      internalID: 7247679119791224650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3ac526747de3750800000000000000
+      internalID: 6286698831448679418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_31
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd506777b77094860800000000000000
+      internalID: 7514545680110978523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee3acf42bcd86750800000000000000
+      internalID: 6298526737278582500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12489f930c2c9cb0800000000000000
+      internalID: -4855957904138157538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dde80a057d8617d0800000000000000
+      internalID: -2948013372248363559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2f4d550603991e0800000000000000
+      internalID: -2190666553424022800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0f16b05c38853a0800000000000000
+      internalID: -6676441565253996303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a01004e529cfb760800000000000000
+      internalID: 7475915071034495139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687b2bf4bd6c4e390800000000000000
+      internalID: -7789882810206865530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80548a267cd5d29e0800000000000000
+      internalID: -1644555177985293048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6effda23557baddc0800000000000000
+      internalID: -3613374174461034522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae83819b6ab87170800000000000000
+      internalID: 8176490094656720545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db0eb8049ea8a120800000000000000
+      internalID: 2425380350164077526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc99426a1556f23d0800000000000000
+      internalID: -3229251006447183411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686fe59b38d89ecb0800000000000000
+      internalID: -4834177128115276154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf9ac7b7b014b540800000000000000
+      internalID: 5022657865673514926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f759c9f68876880800000000000000
+      internalID: -8617769349000364261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d140d5f8ee8f140800000000000000
+      internalID: 4753811706197843358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0224f51cd7c5710d0800000000000000
+      internalID: -3452188894171282912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b83073bafd383ac0800000000000000
+      internalID: -3875279332390717261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3528b7d96c48a840800000000000000
+      internalID: 5235518584292648252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95e20fca71a96d00800000000000000
+      internalID: 966481143878837659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00a9ecd166e34930800000000000000
+      internalID: 4126394991594020878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_53
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fa50f8ef1ee2680800000000000000
+      internalID: -8777830140261060721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5d2aaa35b1b2d60800000000000000
+      internalID: 7866411220291737049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09485aa2770c3ee50800000000000000
+      internalID: 6837520277327676560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_56
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09503bb5f84d4910800000000000000
+      internalID: 1823193644399614221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568f1e3f0b550b1c0800000000000000
+      internalID: -4489994609994106779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_58
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46eb07e145e9df730800000000000000
+      internalID: 4034554925318979172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_59
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ffed1de3b7830f0800000000000000
+      internalID: -1137023396171808972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cb51f4cefcfc280800000000000000
+      internalID: -9020762914753758071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6946ec694ad8c0b10800000000000000
+      internalID: 1949088476788843670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_62
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc251051c32e74d0800000000000000
+      internalID: -3135028977424061244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77045213a9817700800000000000000
+      internalID: 536361164113971071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_64
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338b5c685f2c65740800000000000000
+      internalID: 5140510384473880627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_65
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b8be0c3cf0a1c70800000000000000
+      internalID: 8942477343527242550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_66
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd65e94c89e73ba0800000000000000
+      internalID: -6109157580760322564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_67
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bf53502149598c0800000000000000
+      internalID: -3993122689476330666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_68
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2b40e97ec5bdb70800000000000000
+      internalID: 8924829236423078584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_69
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2a5b83ea1a3ef70800000000000000
+      internalID: 9215387032177976020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_70
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b385e5324cd2400800000000000000
+      internalID: 301112406289431393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290a9279fd4ae5490800000000000000
+      internalID: -7755580228064665454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_72
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5965ff3b4d914c7a0800000000000000
+      internalID: -6357928372596681067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c21bf8559a959d60800000000000000
+      internalID: 7896387487897686727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_74
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b85aae19ba039e90800000000000000
+      internalID: -7020255603940763465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_75
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fb1628988cfa930800000000000000
+      internalID: 4156761474009775983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989bd8e2a4e0994d0800000000000000
+      internalID: -3127452754460690039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_77
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d575487bdffdcb0800000000000000
+      internalID: -4836868510131462878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_78
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28262a8dccad9d580800000000000000
+      internalID: -8801763423376219518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3166067cc818c00800000000000000
+      internalID: 901156188394492914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_80
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ae763eeddc1aa00800000000000000
+      internalID: 766119768811366998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_81
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9d368451d193e50800000000000000
+      internalID: 6789489890483755460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_82
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f795ad82d635913c0800000000000000
+      internalID: -4388384633593898625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_83
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7950e45b6ff4410800000000000000
+      internalID: 1463659662477203376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_84
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8637d692e631503d0800000000000000
+      internalID: -3241162992960834712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_85
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e199ce92c8145da0800000000000000
+      internalID: -5957109182937591320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_86
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0479ee1389699a5f0800000000000000
+      internalID: -744898682936191168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2a0b0b7105d7320800000000000000
+      internalID: 2557288226095145644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_88
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f865c7b4334a0d90800000000000000
+      internalID: -7130813166287230736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_89
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053d6b408f30af2c0800000000000000
+      internalID: -4397197722408004784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_90
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751248886f12c48f0800000000000000
+      internalID: -555031311337381545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55b9a9dad14cc5f0800000000000000
+      internalID: -735140230957779620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_92
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad356db14108e9b0800000000000000
+      internalID: -5050785600233980499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_93
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2371cdb4fed86e10800000000000000
+      internalID: 2191246361452704554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_94
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ec2d9f6b029be00800000000000000
+      internalID: 1060915157469941336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe3e233a4b418a90800000000000000
+      internalID: -7313481537814642958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_96
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e91e11f521514b0800000000000000
+      internalID: -5470445972840407481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_97
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9308d3e1bc8488400800000000000000
+      internalID: 326591010207268921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_98
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e9ac7ae497963f0800000000000000
+      internalID: -907060471208960389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_99
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d9c8410f5382fc0800000000000000
+      internalID: -3519503803536859788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_100
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdccb4b97942ce30800000000000000
+      internalID: 4522257762905542086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_101
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f85f52d77058d00800000000000000
+      internalID: 974193128484736814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_102
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 82
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2d21a46bf551230800000000000000
+      internalID: 3608895912938754747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_NoSword_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5475760a88cf65da0800000000000000
+      internalID: -5956295793414023355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

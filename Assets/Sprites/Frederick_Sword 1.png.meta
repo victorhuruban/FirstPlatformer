@@ -1,0 +1,2624 @@
+fileFormatVersion: 2
+guid: 6906b40ad2701aa499682b6cb8cf486e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5792086167072505533
+    second: Frederick_Sword 1_0
+  - first:
+      213: -8830623994627398878
+    second: Frederick_Sword 1_1
+  - first:
+      213: 4657956553128288839
+    second: Frederick_Sword 1_2
+  - first:
+      213: -7030906723103215862
+    second: Frederick_Sword 1_3
+  - first:
+      213: -8480500446070572062
+    second: Frederick_Sword 1_4
+  - first:
+      213: 6727451069277325841
+    second: Frederick_Sword 1_5
+  - first:
+      213: 8390522186108308044
+    second: Frederick_Sword 1_6
+  - first:
+      213: -2509577920062789738
+    second: Frederick_Sword 1_7
+  - first:
+      213: -6874862115495855526
+    second: Frederick_Sword 1_8
+  - first:
+      213: -2052146939625728177
+    second: Frederick_Sword 1_9
+  - first:
+      213: -5911606367788480895
+    second: Frederick_Sword 1_10
+  - first:
+      213: -4474883600804354848
+    second: Frederick_Sword 1_11
+  - first:
+      213: -1930293386812886004
+    second: Frederick_Sword 1_12
+  - first:
+      213: -1119620098771966194
+    second: Frederick_Sword 1_13
+  - first:
+      213: -1360742945808798869
+    second: Frederick_Sword 1_14
+  - first:
+      213: 6914187566123127296
+    second: Frederick_Sword 1_15
+  - first:
+      213: -1569533537276493021
+    second: Frederick_Sword 1_16
+  - first:
+      213: 3757383219938720687
+    second: Frederick_Sword 1_17
+  - first:
+      213: -7143768372018286209
+    second: Frederick_Sword 1_18
+  - first:
+      213: -2517682554329324009
+    second: Frederick_Sword 1_19
+  - first:
+      213: -6125777634662627973
+    second: Frederick_Sword 1_20
+  - first:
+      213: -2620278626826990964
+    second: Frederick_Sword 1_21
+  - first:
+      213: -3075090904430819899
+    second: Frederick_Sword 1_22
+  - first:
+      213: 1292397776659944111
+    second: Frederick_Sword 1_23
+  - first:
+      213: -3683258521165282116
+    second: Frederick_Sword 1_24
+  - first:
+      213: -925346333034405386
+    second: Frederick_Sword 1_25
+  - first:
+      213: 2537208171129102501
+    second: Frederick_Sword 1_26
+  - first:
+      213: -3355491887199612902
+    second: Frederick_Sword 1_27
+  - first:
+      213: -4136796268048086904
+    second: Frederick_Sword 1_28
+  - first:
+      213: 8958637797282453094
+    second: Frederick_Sword 1_29
+  - first:
+      213: -6214078637177351740
+    second: Frederick_Sword 1_30
+  - first:
+      213: 3560357976976121675
+    second: Frederick_Sword 1_31
+  - first:
+      213: -8064330116823226626
+    second: Frederick_Sword 1_32
+  - first:
+      213: 5741788678638131965
+    second: Frederick_Sword 1_33
+  - first:
+      213: -8249638376151682944
+    second: Frederick_Sword 1_34
+  - first:
+      213: 848038993092496275
+    second: Frederick_Sword 1_35
+  - first:
+      213: 2897352021526750
+    second: Frederick_Sword 1_36
+  - first:
+      213: -2540631057768221979
+    second: Frederick_Sword 1_37
+  - first:
+      213: 3730049039636704129
+    second: Frederick_Sword 1_38
+  - first:
+      213: 8421308827484545551
+    second: Frederick_Sword 1_39
+  - first:
+      213: -3335791392858243244
+    second: Frederick_Sword 1_40
+  - first:
+      213: -8338780560051546915
+    second: Frederick_Sword 1_41
+  - first:
+      213: 1144019134866307083
+    second: Frederick_Sword 1_42
+  - first:
+      213: 5390060022124894712
+    second: Frederick_Sword 1_43
+  - first:
+      213: 5371724575043787121
+    second: Frederick_Sword 1_44
+  - first:
+      213: 7666409631321807565
+    second: Frederick_Sword 1_45
+  - first:
+      213: 3513319343107061295
+    second: Frederick_Sword 1_46
+  - first:
+      213: 5505268632098769703
+    second: Frederick_Sword 1_47
+  - first:
+      213: 7279676988601594657
+    second: Frederick_Sword 1_48
+  - first:
+      213: -1324119301219386495
+    second: Frederick_Sword 1_49
+  - first:
+      213: 1915357254249772528
+    second: Frederick_Sword 1_50
+  - first:
+      213: 1673493444510509806
+    second: Frederick_Sword 1_51
+  - first:
+      213: -7894207129346677691
+    second: Frederick_Sword 1_52
+  - first:
+      213: 5926731184661840907
+    second: Frederick_Sword 1_53
+  - first:
+      213: 2691176876919795626
+    second: Frederick_Sword 1_54
+  - first:
+      213: -3750929284459446575
+    second: Frederick_Sword 1_55
+  - first:
+      213: 5780162889558056081
+    second: Frederick_Sword 1_56
+  - first:
+      213: -8109018535885233394
+    second: Frederick_Sword 1_57
+  - first:
+      213: -6628519734401585600
+    second: Frederick_Sword 1_58
+  - first:
+      213: 4303735857895355465
+    second: Frederick_Sword 1_59
+  - first:
+      213: 675167984814069084
+    second: Frederick_Sword 1_60
+  - first:
+      213: 4295515308678289508
+    second: Frederick_Sword 1_61
+  - first:
+      213: 3963170902118943264
+    second: Frederick_Sword 1_62
+  - first:
+      213: -6716065283592600004
+    second: Frederick_Sword 1_63
+  - first:
+      213: 1118646425925253235
+    second: Frederick_Sword 1_64
+  - first:
+      213: -5920613927927934926
+    second: Frederick_Sword 1_65
+  - first:
+      213: 4648839261332674132
+    second: Frederick_Sword 1_66
+  - first:
+      213: 4765402434181319095
+    second: Frederick_Sword 1_67
+  - first:
+      213: 6162110495900423266
+    second: Frederick_Sword 1_68
+  - first:
+      213: 5956608533275830689
+    second: Frederick_Sword 1_69
+  - first:
+      213: -5534767332628937761
+    second: Frederick_Sword 1_70
+  - first:
+      213: -5861569261939068113
+    second: Frederick_Sword 1_71
+  - first:
+      213: -2761078609356298284
+    second: Frederick_Sword 1_72
+  - first:
+      213: -3803712167627126250
+    second: Frederick_Sword 1_73
+  - first:
+      213: -1058536564172996505
+    second: Frederick_Sword 1_74
+  - first:
+      213: 2103350595149989226
+    second: Frederick_Sword 1_75
+  - first:
+      213: 31445753863213417
+    second: Frederick_Sword 1_76
+  - first:
+      213: 1293705457179810922
+    second: Frederick_Sword 1_77
+  - first:
+      213: -4066112040983774203
+    second: Frederick_Sword 1_78
+  - first:
+      213: -2441274167873915817
+    second: Frederick_Sword 1_79
+  - first:
+      213: -6766490344359433598
+    second: Frederick_Sword 1_80
+  - first:
+      213: -1696388478634968059
+    second: Frederick_Sword 1_81
+  - first:
+      213: -68569677211977957
+    second: Frederick_Sword 1_82
+  - first:
+      213: -8122919636741383788
+    second: Frederick_Sword 1_83
+  - first:
+      213: 5853022590928315065
+    second: Frederick_Sword 1_84
+  - first:
+      213: 4464651765215273541
+    second: Frederick_Sword 1_85
+  - first:
+      213: -3424558773292000448
+    second: Frederick_Sword 1_86
+  - first:
+      213: 9056052382890226002
+    second: Frederick_Sword 1_87
+  - first:
+      213: -1588513328841977847
+    second: Frederick_Sword 1_88
+  - first:
+      213: 7238369951254947918
+    second: Frederick_Sword 1_89
+  - first:
+      213: 6174869462700335240
+    second: Frederick_Sword 1_90
+  - first:
+      213: 1422503144840502824
+    second: Frederick_Sword 1_91
+  - first:
+      213: 3039788716413126994
+    second: Frederick_Sword 1_92
+  - first:
+      213: -7267419253006929776
+    second: Frederick_Sword 1_93
+  - first:
+      213: 6384879925056906682
+    second: Frederick_Sword 1_94
+  - first:
+      213: -2153411016004942825
+    second: Frederick_Sword 1_95
+  - first:
+      213: -8057689435299405883
+    second: Frederick_Sword 1_96
+  - first:
+      213: -1059867883852672016
+    second: Frederick_Sword 1_97
+  - first:
+      213: -8708786791253237895
+    second: Frederick_Sword 1_98
+  - first:
+      213: -2696474462880166057
+    second: Frederick_Sword 1_99
+  - first:
+      213: -850821273232702523
+    second: Frederick_Sword 1_100
+  - first:
+      213: 3097444673488119836
+    second: Frederick_Sword 1_101
+  - first:
+      213: -4418116783124072911
+    second: Frederick_Sword 1_102
+  - first:
+      213: 4787304572093808564
+    second: Frederick_Sword 1_103
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frederick_Sword 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341803f91506e9fa0800000000000000
+      internalID: -5792086167072505533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22361377342537580800000000000000
+      internalID: -8830623994627398878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7422a606ec264a040800000000000000
+      internalID: 4657956553128288839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fe68036933d6e90800000000000000
+      internalID: -7030906723103215862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebfb62a6c53f4a80800000000000000
+      internalID: -8480500446070572062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ac81c9a15bc5d50800000000000000
+      internalID: 6727451069277325841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a050f297f117470800000000000000
+      internalID: 8390522186108308044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1042
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6976e729d203c2dd0800000000000000
+      internalID: -2509577920062789738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a341e94559790a0800000000000000
+      internalID: -6874862115495855526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4714bc2b3f4583e0800000000000000
+      internalID: -2052146939625728177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186c70c5451c5fda0800000000000000
+      internalID: -5911606367788480895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4e5d2f21506e1c0800000000000000
+      internalID: -4474883600804354848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c047bbe44683635e0800000000000000
+      internalID: -1930293386812886004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e072f41c37f4670f0800000000000000
+      internalID: -1119620098771966194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ba274108bad1de0800000000000000
+      internalID: -1360742945808798869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 962
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002113d55f024ff50800000000000000
+      internalID: 6914187566123127296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32382974095e73ae0800000000000000
+      internalID: -1569533537276493021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabf57d8128e42430800000000000000
+      internalID: 3757383219938720687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71fd24d38c3cdc90800000000000000
+      internalID: -7143768372018286209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716a00c5e056f0dd0800000000000000
+      internalID: -2517682554329324009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c6e072bddcfaa0800000000000000
+      internalID: -6125777634662627973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8acd63c876e2abd0800000000000000
+      internalID: -2620278626826990964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5cd5d6d151355d0800000000000000
+      internalID: -3075090904430819899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 882
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa212523ee48fe110800000000000000
+      internalID: 1292397776659944111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb44306c3ef62ecc0800000000000000
+      internalID: -3683258521165282116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1264da9628823f0800000000000000
+      internalID: -925346333034405386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a06e519369f53320800000000000000
+      internalID: 2537208171129102501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1013c028e5ee61d0800000000000000
+      internalID: -3355491887199612902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88805de36b52796c0800000000000000
+      internalID: -4136796268048086904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666986a9c99735c70800000000000000
+      internalID: 8958637797282453094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c153b0376823c9a0800000000000000
+      internalID: -6214078637177351740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_31
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 802
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fd3ea67bee86130800000000000000
+      internalID: 3560357976976121675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef664434c7eb51090800000000000000
+      internalID: -8064330116823226626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfad595c16eeeaf40800000000000000
+      internalID: 5741788678638131965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0807c08fa95638d80800000000000000
+      internalID: -8249638376151682944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b45fa98f6d4cb00800000000000000
+      internalID: 848038993092496275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed84806502b4a0000800000000000000
+      internalID: 2897352021526750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e27668838dddbcd0800000000000000
+      internalID: -2540631057768221979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b2552c6dbc3c330800000000000000
+      internalID: 3730049039636704129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 722
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02e316b2cf7ed470800000000000000
+      internalID: 8421308827484545551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ff0e7e663e4b1d0800000000000000
+      internalID: -3335791392858243244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4d13ae243b64c80800000000000000
+      internalID: -8338780560051546915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08b4f5875f50ef00800000000000000
+      internalID: 1144019134866307083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9d9c848075dca40800000000000000
+      internalID: 5390060022124894712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17998b65a033c8a40800000000000000
+      internalID: 5371724575043787121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_45
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcad199f0fe846a60800000000000000
+      internalID: 7666409631321807565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26b7640451d1c030800000000000000
+      internalID: 3513319343107061295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 642
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b095917a4a66c40800000000000000
+      internalID: 5505268632098769703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123fe29d6ab960560800000000000000
+      internalID: 7279676988601594657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b7492d288cf9de0800000000000000
+      internalID: -1324119301219386495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f576855647b49a10800000000000000
+      internalID: 1915357254249772528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea6ef5db61793710800000000000000
+      internalID: 1673493444510509806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5446fefe074227290800000000000000
+      internalID: -7894207129346677691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_53
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04cffc7c9aff3250800000000000000
+      internalID: 5926731184661840907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 562
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafac807c1bf85520800000000000000
+      internalID: 2691176876919795626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de3f2660b502fbc0800000000000000
+      internalID: -3750929284459446575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_56
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cd0000683473050800000000000000
+      internalID: 5780162889558056081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03a083ea9af67f80800000000000000
+      internalID: -8109018535885233394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_58
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 482
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ea354cb64c204a0800000000000000
+      internalID: -6628519734401585600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_59
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944b6f8e5f0f9bb30800000000000000
+      internalID: 4303735857895355465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c551f8a74bdae5900800000000000000
+      internalID: 675167984814069084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46895052a6cbc9b30800000000000000
+      internalID: 4295515308678289508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_62
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ac6fc00f2000730800000000000000
+      internalID: 3963170902118943264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c364123353ebbc2a0800000000000000
+      internalID: -6716065283592600004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_64
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378f88e5ffa368f00800000000000000
+      internalID: 1118646425925253235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_65
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23010a55001c5dda0800000000000000
+      internalID: -5920613927927934926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_66
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4569f957daef38040800000000000000
+      internalID: 4648839261332674132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_67
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9c825044c122240800000000000000
+      internalID: 4765402434181319095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_68
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264d9d609d6348550800000000000000
+      internalID: 6162110495900423266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_69
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a967fbc6ef1aa250800000000000000
+      internalID: 5956608533275830689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_70
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd347387f6e8033b0800000000000000
+      internalID: -5534767332628937761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23f5cbefc587aea0800000000000000
+      internalID: -5861569261939068113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_72
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7636432adaea9d0800000000000000
+      internalID: -2761078609356298284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a01ccbfef763bc0800000000000000
+      internalID: -3803712167627126250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_74
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760c4be6a925f41f0800000000000000
+      internalID: -1058536564172996505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_75
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a658506e83a903d10800000000000000
+      internalID: 2103350595149989226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96116bc1fb7bf6000800000000000000
+      internalID: 31445753863213417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_77
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cdf2b424a24f110800000000000000
+      internalID: 1293705457179810922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_78
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 322
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c393454a44297c0800000000000000
+      internalID: -4066112040983774203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754b988241ade1ed0800000000000000
+      internalID: -2441274167873915817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_80
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a6858d1e89812a0800000000000000
+      internalID: -6766490344359433598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_81
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cb5e1aaa73578e0800000000000000
+      internalID: -1696388478634968059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_82
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17ba6bed346c0ff0800000000000000
+      internalID: -68569677211977957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_83
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4991cf0a0a7954f80800000000000000
+      internalID: -8122919636741383788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_84
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b26e9a290d1a3150800000000000000
+      internalID: 5853022590928315065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_85
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5422a7f2021a5fd30800000000000000
+      internalID: 4464651765215273541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_86
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 242
+        width: 100
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b9b7590f58970d0800000000000000
+      internalID: -3424558773292000448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251708549af8dad70800000000000000
+      internalID: 9056052382890226002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_88
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90096613b8774f9e0800000000000000
+      internalID: -1588513328841977847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_89
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48a961ce1bd37460800000000000000
+      internalID: 7238369951254947918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_90
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88029aa7f0b81b550800000000000000
+      internalID: 6174869462700335240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e1810d21fbdb310800000000000000
+      internalID: 1422503144840502824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_92
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2598b0a6bbf7f2a20800000000000000
+      internalID: 3039788716413126994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_93
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090ffae91b0f42b90800000000000000
+      internalID: -7267419253006929776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_94
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab52a8a9676ab9850800000000000000
+      internalID: 6384879925056906682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714cc97171c8d12e0800000000000000
+      internalID: -2153411016004942825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_96
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf9f8a66265d2090800000000000000
+      internalID: -8057689435299405883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_97
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3dd1a66c79a41f0800000000000000
+      internalID: -1059867883852672016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_98
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f9cb2fd8c242780800000000000000
+      internalID: -8708786791253237895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_99
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f8d1633c2349ad0800000000000000
+      internalID: -2696474462880166057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_100
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c38e915f864134f0800000000000000
+      internalID: -850821273232702523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_101
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c186fa205855cfa20800000000000000
+      internalID: 3097444673488119836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_102
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136b2b5a132bfa2c0800000000000000
+      internalID: -4418116783124072911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frederick_Sword 1_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf3143e42cef6240800000000000000
+      internalID: 4787304572093808564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

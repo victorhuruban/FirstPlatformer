@@ -8,6 +8,10 @@ TagManager:
   - Wall
   - Coin
   - Enemy
+  - Interactable_foliage
+  - Dust
+  - Ceilling
+  - Ledge
   layers:
   - Default
   - TransparentFX
