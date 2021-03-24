@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpDustSD : MonoBehaviour
+public class StompDustSD : MonoBehaviour
 {
     void Awake() {
         Animator temp = GetComponent<Animator>();
-        if ((int)Random.Range(0,2) == 0) {
-            temp.SetTrigger("Trigger1");
-        } else {
-            temp.SetTrigger("Trigger2");
-        }
+        temp.SetTrigger("Trigger");
     }
     void Start()
     {

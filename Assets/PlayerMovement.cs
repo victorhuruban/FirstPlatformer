@@ -14,11 +14,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpPower;
     [SerializeField] float sprintSpeed;
+    [SerializeField] float stompSpeed;
     [SerializeField] float knockBackForce;
+    [SerializeField] float fallingThreshold;
+    [SerializeField] float moveHoldTimeLimit;
     [SerializeField] int crouchSpeed;
     [SerializeField] private LayerMask platformLayerMask;
     bool inAir;
+    [SerializeField] bool stompAction;
     bool isGrounded;
+    bool falling;
     bool rotated;
     bool sprinting;
     bool jumpOrFall;
@@ -28,7 +33,9 @@ public class PlayerMovement : MonoBehaviour
     bool isSecondTypePlayer;
     bool isThirdTypePlayer;
     bool flip; // TRUE = RIGHT; FALSE = LEFT
-    float chargeJump;
+    bool AOrDUp;
+    float moveHoldTime;
+    float notMoved;
 
     // Start is called before the first frame update
     void Start()
@@ -59,131 +66,132 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R)) {
                 // Transform to third character
             }
-
             ManageMovement();
-            // MOVEMENT SETTINGS
-            //
-            // RECTANGLE MOVEMENT
-            //
-            // RIGHT SPRINT
-            //if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift)) {
-            //    MoveSprintRectangle(moveSpeed, sprintSpeed, 1);
-            //    RotatePlayerRectangle(false, true);
-            // RIGHT MOVEMENT
-            /*}*/ 
-            //if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
-            //    MoveSprintRectangle(moveSpeed - crouchSpeed, 1f, 1);
-            //    ResetAfterMovementRectangle();
-            //} else if (Input.GetKey(KeyCode.D)) {
-            //    MoveSprintRectangle(moveSpeed, 1f, 1);
-            //    RotatePlayerRectangle(false);
-            //} 
-
-            // LEFT SPRINT
-            //if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift)) {
-            //    MoveSprintRectangle(moveSpeed, sprintSpeed, 0);
-            //    RotatePlayerRectangle(true, true);
-            // LEFT MOVEMENT
-            /*}*/ 
-            //if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
-            //    MoveSprintRectangle(moveSpeed - crouchSpeed, 1f, 0);
-            //    ResetAfterMovementRectangle();
-            //} else if (Input.GetKey(KeyCode.A)) {
-            //    MoveSprintRectangle(moveSpeed, 1f, 0);
-            //    RotatePlayerRectangle(true);
-            //} 
-
-            // JUMP
-            //if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGroundedCheck()) {
-            //    chargeJump += Time.deltaTime;
-            //}
-
-            // RESET THE RECTANGLE ANGLE / JUMP FUNC
-            /*if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) {
-                ResetAfterMovementRectangle();
-                rb.velocity = new Vector2(0, rb.velocity.y);
-            }
-
-            if ((Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Space)) && isGroundedCheck()) {
-                anim.SetTrigger("Jump");
-                rb.drag = 0;
-                if (chargeJump < 0.2f) {
-                    rb.velocity = Vector2.up * jumpPower;
-                } else if (chargeJump > 0.2f) {
-                    rb.velocity = Vector2.up * (jumpPower + 5);
-                }
-                chargeJump = 0;
-            }
             
-            if (Input.GetKey(KeyCode.S)) {
-                anim.SetBool("Crouch", true);
-            } 
-
-            if (Input.GetKeyUp(KeyCode.S)) {
-                anim.SetBool("Crouch", false);
-            }
-            */
         }
+        isGroundedCheck();
+        isFalling();
     }
 
     // MOVEMENT SETTINGS
     //
     private void ManageMovement() {
         if (isBasicPlayer) {
-            // RECTANGLE MOVEMENT
+            // Frederick Movement
             //
-            // RIGHT MOVEMENT CROUCHED OR NOT
-            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
-                Flip(0);
-                MovePlayer(moveSpeed - crouchSpeed, 1f, 1);
-                anim.SetBool("Run", true);
-            } else if (Input.GetKey(KeyCode.D)) {
-                Flip(0);
-                MovePlayer(moveSpeed, 1f, 1);
-                anim.SetBool("Run", true);
-            } 
-            // LEFT MOVEMENT CROUCHED OR NOT
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
-                Flip(1);
-                MovePlayer(moveSpeed - crouchSpeed, 1f, 0);
-                anim.SetBool("Run", true);
-            } else if (Input.GetKey(KeyCode.A)) {
-                Flip(1);
-                MovePlayer(moveSpeed, 1f, 0);
-                anim.SetBool("Run", true);
-            } 
-
-            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
+            //
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A)) {
+                // STOP CHARACTER
+                rb.velocity = new Vector2(0, rb.velocity.y);
                 anim.SetBool("Run", false);
-                anim.SetTrigger("StopRun");
-                if (isGroundedCheck()) {
-                    animatorSpawner.SpawnAnimation("stopDust");
+                anim.SetBool("StartRun", false); 
+                anim.SetBool("StopRun", true);
+
+            } else if ((Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))) {
+                anim.SetBool("StopRun", false);
+                if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
+                    AOrDUp = false;
+                    moveHoldTime += Time.deltaTime;
+                    if (moveHoldTime > moveHoldTimeLimit) {
+                        Flip(0);
+                        MovePlayer(moveSpeed - crouchSpeed, 1f, 1);
+                        if (!falling) {
+                            anim.SetBool("StartRun", true);
+                        } else if (falling) {
+                            anim.SetTrigger("Falling");
+                        }
+                    }
+                    if (notMoved < 0.04) {
+                        notMoved += Time.deltaTime;
+                    }
+                } else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
+                    AOrDUp = false;
+                    moveHoldTime += Time.deltaTime;
+                    if (moveHoldTime > moveHoldTimeLimit) {
+                        Flip(1);
+                        MovePlayer(moveSpeed - crouchSpeed, 1f, 0);
+                        if (!falling) {
+                            anim.SetBool("StartRun", true);
+                        } else if (falling) {
+                            anim.SetTrigger("Falling");
+                        }
+                    }
+                    if (notMoved < 0.04) {
+                        notMoved += Time.deltaTime;
+                    }  
+                }
+            } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)) {
+                anim.SetBool("StopRun", false);
+                if (Input.GetKey(KeyCode.D)) {
+                    AOrDUp = false;
+                    moveHoldTime += Time.deltaTime;
+                    if (moveHoldTime > moveHoldTimeLimit) {
+                        Flip(0);
+                        MovePlayer(moveSpeed, 1f, 1);
+                        if (!falling) {
+                            anim.SetBool("StartRun", true);
+                        } else if (falling) {
+                            anim.SetTrigger("Falling");
+                        }
+                    } 
+                    if (notMoved < 0.04) {
+                        notMoved += Time.deltaTime;
+                    } 
+                } else if (Input.GetKey(KeyCode.A)) {
+                    AOrDUp = false;
+                    moveHoldTime += Time.deltaTime;
+                    if (moveHoldTime > moveHoldTimeLimit) {
+                        Flip(1);
+                        MovePlayer(moveSpeed, 1f, 0);
+                        if (!falling) {
+                            anim.SetBool("StartRun", true);
+                        } else if (falling) {
+                            anim.SetTrigger("Falling");
+                        }
+                    } 
+                    if (notMoved < 0.04) {
+                        notMoved += Time.deltaTime;
+                    }  
+                }
+            } else {
+                if (notMoved > 0) {
+                    notMoved -= Time.deltaTime;
                 }
             }
-            // CHARGE JUMP / IS LESS THAN 0.2 SECONDS HOLD, NORMAL JUMP
-            if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGroundedCheck()) {
-                chargeJump += Time.deltaTime;
-            }
+
+            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
+                AOrDUp = true;
+                if (moveHoldTime < moveHoldTimeLimit) {
+                    if (Input.GetKeyUp(KeyCode.A)) {
+                        Flip(1);
+                    } else if (Input.GetKeyUp(KeyCode.D)) {
+                        Flip(0); 
+                    }
+                } else {
+                    anim.SetBool("Run", false);
+                    anim.SetBool("StartRun", false);                    
+                    rb.velocity = new Vector2(0, rb.velocity.y);
+                    if (isGrounded) {
+                        animatorSpawner.SpawnAnimation("stopDust");
+                    }
+                }  
+                moveHoldTime = 0;
+            } 
             // JUMP CODE
-            if ((Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Space)) && isGroundedCheck()) {
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
                 anim.SetTrigger("Jump");
                 audioManager.PlaySound("jump");
                 animatorSpawner.SpawnAnimation("jumpDust");
                 rb.drag = 0;
-                if (chargeJump < 0.2f) {
-                    rb.velocity = Vector2.up * jumpPower;
-                } else if (chargeJump > 0.2f) {
-                    rb.velocity = Vector2.up * (jumpPower + 5);
-                }
-                chargeJump = 0;
-            }
-            // RESET THE RECTANGLE ANGLE
-            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) {
-                rb.velocity = new Vector2(0, rb.velocity.y);
+                rb.velocity = Vector2.up * jumpPower;
             }
             // CROUCH
-            if (Input.GetKey(KeyCode.S)) {
-                // CROUCH
+            if (Input.GetKeyDown(KeyCode.S) && inAir) {
+                // AIR SLAM / AIR STOMP
+                rb.velocity = Vector2.down * stompSpeed;
+                stompAction = true;
+                anim.SetTrigger("StompFall");
+                setCanMove();
             } 
             // UNCROUCH
             if (Input.GetKeyUp(KeyCode.S)) {
@@ -194,21 +202,33 @@ public class PlayerMovement : MonoBehaviour
         } else if (isThirdTypePlayer) {
             // THIRD CHARACTER MOVEMENT
         }
-        Debug.Log(inAir);
+        if (notMoved <= 0 && AOrDUp) {
+            AOrDUp = true;
+            anim.SetBool("StopRun", true);
+        }
     }
 
     void FixedUpdate() {
         
     }
 
-    private bool isGroundedCheck() {
+    private void isGroundedCheck() {
         float extraHeightTest = .05f;
         RaycastHit2D rchit = Physics2D.BoxCast(cc.bounds.center, cc.bounds.size,  0f, Vector2.down, extraHeightTest, platformLayerMask);
         bool temp = rchit.collider != null;
         if (temp) {
             inAir = false;
-        } else inAir = true;
-        return temp;
+            isGrounded = true;
+            Debug.Log("2st");
+        } else if (!temp && stompAction) {
+            inAir = true;
+            isGrounded = false;
+            Debug.Log("3st");
+        } else if (!temp) {
+            inAir = true;
+            isGrounded = false;
+            Debug.Log("4st");
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -225,13 +245,25 @@ public class PlayerMovement : MonoBehaviour
             rb.inertia = 0;
 
             rb.AddForce(-dir.normalized * knockBackForce, ForceMode2D.Impulse);
-            anim.SetTrigger("Damage");
             Invoke("setCanMove", 0.2f);
         }
         if (col.gameObject.tag == "Ground") {
-            inAir = false;
-            audioManager.PlaySound("landing");
-            animatorSpawner.SpawnAnimation("fallDust");
+            if (stompAction) {
+                animatorSpawner.SpawnAnimation("stompDust");
+                audioManager.PlaySound("airslamlanding");
+                anim.SetTrigger("StompToIdle");
+                anim.SetBool("StartRun", false);
+                inAir = false;
+                isGrounded = true;
+                stompAction = false;
+                Invoke("setCanMove", 0.58f);
+            } else {
+                audioManager.PlaySound("landing");
+                animatorSpawner.SpawnAnimation("fallDust");
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
+                    anim.SetTrigger("FallToRun");
+                } else anim.SetTrigger("FallToIdle");
+            }
         }
     }
 
@@ -272,6 +304,17 @@ public class PlayerMovement : MonoBehaviour
                 flip = false;
                 transform.localRotation = Quaternion.Euler(0,180,0);
             }
+        }
+    }
+
+    private void isFalling() {
+        if (rb.velocity.y < fallingThreshold) {
+            falling = true;
+            if (!stompAction && isGrounded) {
+                anim.SetTrigger("Falling");
+            }
+        } else {
+            falling = false;
         }
     }
 }

@@ -7,6 +7,7 @@ public class AnimatorSpawner : MonoBehaviour
     [SerializeField] private GameObject jumpDust;
     [SerializeField] private GameObject stopDust;
     [SerializeField] private GameObject fallDust;
+    [SerializeField] private GameObject stompDust;
     public static AnimatorSpawner instance;
     void Awake() {
         if (instance == null) {
@@ -27,7 +28,8 @@ public class AnimatorSpawner : MonoBehaviour
             } else if (temp.rotation.y == 0) {
                 stopDustObj.GetComponent<SpriteRenderer>().flipX = true;
             }
-            Debug.Log(temp.rotation.y);
+        } else if (spawnAnimationObject == "stompDust") {
+            Instantiate(stompDust, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
         }
     }
 }
