@@ -6,10 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     Transform trans;
-    CapsuleCollider2D capsuleCollider;
+    BoxCollider2D boxCollider;
     Animator anim;
     AudioManager audioManager;
     AnimatorSpawner animatorSpawner;
+    GameObject ledgeCollider;
     [SerializeField] GameObject coin;
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpPower;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask platformLayerMask;
     [SerializeField] private LayerMask wallLayerMask;
     [SerializeField] private LayerMask ledgeLayerMask;
+    [SerializeField] private LayerMask enemyLayerMask;
     bool inAir;
     bool stompAction;
     bool isGrounded;
@@ -31,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
     bool sprinting;
     bool jumpOrFall;
     bool justFalled;
+    bool isJumping;
+    float jumpTimeCounter;
+    public float jumpTime;
     bool canMove;
     bool isBasicPlayer;
     bool isSecondTypePlayer;
@@ -46,9 +51,15 @@ public class PlayerMovement : MonoBehaviour
     bool ledgeDetection;
     bool leftLedge;
     bool rightLedge;
+    bool waitAfterLedgeClimb;
     float notMoved;
+    [SerializeField] Transform attackPositionJ;
+    [SerializeField] Transform attackPositionK;
+    public float attackRangeXJ;
+    public float attackRangeYJ;
+    public float attackRangeXK;
+    public float attackRangeYK;
 
-    // Start is called before the first frame update
     void Start()
     {
         animatorSpawner = AnimatorSpawner.instance;
@@ -56,7 +67,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         trans = GetComponent<Transform>();
         anim = GetComponent<Animator>();
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        ledgeCollider = trans.GetChild(0).gameObject;
         canMove = true;
         isGrounded = true;
         flip = true;
@@ -73,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update() {
+        Debug.Log(ledgeCollider);
         if (canMove) {
             if (Input.GetKeyDown(KeyCode.Q)) {
                 // Transform to first character
@@ -87,15 +100,11 @@ public class PlayerMovement : MonoBehaviour
             ManageAttack(); 
         } 
         if (ledgeMovement) {
-            Debug.Log(ledgeMovement + " ledgeMovement");
             ManageLedgeMovement();
         }
         moveHoldTimeDown();
         surroundingCheck();
         isFalling();
-        if (Input.GetKeyDown(KeyCode.Y)) {
-            Debug.Log(transform.position);
-        }
     }
 
     // MOVEMENT SETTINGS
@@ -217,7 +226,25 @@ public class PlayerMovement : MonoBehaviour
                 audioManager.PlaySound("jump");
                 animatorSpawner.SpawnAnimation("jumpDust");
                 rb.drag = 0;
+                isJumping = true;
+                jumpTimeCounter = jumpTime;
                 rb.velocity = Vector2.up * jumpPower;
+            }
+            if (Input.GetKey(KeyCode.Space) && isJumping) {
+                if (jumpTimeCounter > 0) {
+                    rb.velocity = Vector2.up * jumpPower;
+                    jumpTimeCounter -= Time.deltaTime;
+                    if (Input.GetKey(KeyCode.A)) {
+                        MovePlayer(moveSpeed, 1f, 0);
+                    } else if (Input.GetKey(KeyCode.D)) {
+                        MovePlayer(moveSpeed, 1f, 1);
+                    }
+                } else {
+                    isJumping = false;
+                }
+            }
+            if (Input.GetKeyUp(KeyCode.Space)) {
+                isJumping = false;
             }
             // CROUCH
             if (Input.GetKeyDown(KeyCode.S) && inAir) {
@@ -249,57 +276,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void ManageLedgeMovement() {
-        if (Input.GetKey(KeyCode.D)) {
-            if (leftLedge) {
-                anim.SetBool("Ledge_Look", true);
-            } 
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                ledgeMovement = false;
-                canMove = true;
-                anim.SetTrigger("Jump");
-                rb.isKinematic = false;
-                rb.drag = 0;
-                rb.velocity = new Vector2(-0.5f,1) * jumpPower;
-                Invoke("setLedgeDetection", 0.1f);
-                anim.SetBool("Ledge_Look", false);
-            }
-        }
-        if (Input.GetKey(KeyCode.A)) {
-            if (rightLedge) {
-                anim.SetBool("Ledge_Look", true);
-            }
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                ledgeMovement = false;
-                canMove = true;
-                anim.SetTrigger("Jump");
-                rb.isKinematic = false;
-                rb.drag = 0;
-                rb.velocity = new Vector2(0.5f,1) * jumpPower;
-                Invoke("setLedgeDetection", 0.1f);
-                anim.SetBool("Ledge_Look", false);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            anim.SetTrigger("Climb_Ledge");
-        }
-        if (Input.GetKeyUp(KeyCode.D)) {
-            if (leftLedge) {
-                anim.SetBool("Ledge_Look", false);
-            }
-        }
-        if (Input.GetKeyUp(KeyCode.A)) {
-            if (rightLedge) {
-                anim.SetBool("Ledge_Look", false);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.S)) {
-            rb.isKinematic = false;
-            canMove = true;
-            
-            anim.SetTrigger("Falling");
-            anim.SetBool("Ledge_Look", false);
-            Invoke("setLedgeDetection", 0.1f);
-        }
+        anim.SetTrigger("Climb_Ledge");
     }
 
     private void ManageAttack() {
@@ -307,44 +284,61 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.J) && isGrounded) {
                 setCanMove(); // MAKE UNABLE TO MOVE
                 anim.SetTrigger("Ground_Attack_" + (int)Random.Range(1,3));
+                Attack(20, "J");
                 audioManager.PlaySound("swordswoosh");
                 Invoke("setCanMove", 0.25f);
             }
             if ((Input.GetKeyDown(KeyCode.J) || ((Input.GetKeyDown(KeyCode.J) && Input.GetKey(KeyCode.A)) || (Input.GetKeyDown(KeyCode.J) && Input.GetKey(KeyCode.D)))) && !isGrounded && airAttack) {
                 airAttack = false;
                 anim.SetTrigger("Jump_Attack");
+                Attack(20, "J");
                 audioManager.PlaySound("swordswoosh");
             }
             if (Input.GetKeyDown(KeyCode.K) && isGrounded) {
                 setCanMove(); // MAKE UNABLE TO MOVE
                 anim.SetTrigger("Ground_Heavy_Attack");
+                Attack(35, "K");
                 audioManager.PlaySound("swordswoosh");
                 Invoke("setCanMove", 0.35f);
             }
             if ((Input.GetKeyDown(KeyCode.K) || ((Input.GetKeyDown(KeyCode.K) && Input.GetKey(KeyCode.A)) || (Input.GetKeyDown(KeyCode.K) && Input.GetKey(KeyCode.D)))) && !isGrounded && airAttack) {
                 airAttack = false;
                 anim.SetTrigger("Jump_Heavy_Attack");
+                Attack(35, "K");
                 audioManager.PlaySound("swordswoosh");
             }
-            
         }
     }
 
-    void FixedUpdate() {
+    private void Attack(int damage, string type) {
+        Collider2D[] enemiesToDamage = null;
+        if (type == "J") {
+            enemiesToDamage = Physics2D.OverlapBoxAll(attackPositionJ.position, new Vector2(attackRangeXJ, attackRangeYJ), 0, enemyLayerMask);
+        } else if (type == "K") {
+            enemiesToDamage = Physics2D.OverlapBoxAll(attackPositionK.position, new Vector2(attackRangeXK, attackRangeYK), 0, enemyLayerMask);
+        }
         
+        for (int i = 0; i < enemiesToDamage.Length; i++) {
+            enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+        }
+    }
+
+    void OnDrawGizmosSelected() {
+        Gizmos.color = Color.red;
+        //Gizmos.DrawWireCube(attackPositionJ.position, new Vector3(attackRangeXJ, attackRangeYJ, 1));
+        Gizmos.DrawWireCube(attackPositionK.position, new Vector3(attackRangeXK, attackRangeYK, 1));
     }
 
     private void surroundingCheck() {
         // Ground Check
         float extraHeightTest = .1f;
         float extraSideLength = .05f;
-        float extraLedgeLength = .15f;
-        RaycastHit2D groundCheckRC = Physics2D.BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size,  0f, Vector2.down, extraHeightTest, platformLayerMask);
+        RaycastHit2D groundCheckRC = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size,  0f, Vector2.down, extraHeightTest, platformLayerMask);
         bool groundCheckRCbool = groundCheckRC.collider != null;
-        Color tempColorL = Color.green;
-        Color tempColorR = Color.green;
-        Color tempColorLedgeL = Color.green;
-        Color tempColorLedgeR = Color.green;
+        //Color tempColorL = Color.green;
+        //Color tempColorR = Color.green;
+        //Color tempColorLedgeL = Color.green;
+        //Color tempColorLedgeR = Color.green;
         if (groundCheckRCbool) {
             if (stompAction) {
                 animatorSpawner.SpawnAnimation("stompDust");
@@ -353,7 +347,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("StartRun", false);
                 stompAction = false;
                 Invoke("setCanMove", 0.58f);
-            } else if (!isGrounded) {
+            } else if (!isGrounded && !waitAfterLedgeClimb) {
                 audioManager.PlaySound("landing");
                 animatorSpawner.SpawnAnimation("fallDust");
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
@@ -379,66 +373,28 @@ public class PlayerMovement : MonoBehaviour
         // Wall Check
         //
         // Left
-        RaycastHit2D wallCheckRCLeft = Physics2D.Raycast(capsuleCollider.bounds.center, Vector2.right, 
-            -(capsuleCollider.bounds.extents.x + extraSideLength), wallLayerMask);
+        RaycastHit2D wallCheckRCLeft = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, 
+            -(boxCollider.bounds.extents.x + extraSideLength), wallLayerMask);
         if (wallCheckRCLeft.collider != null) {
             canMoveLeft = false;
-            tempColorL = Color.red;
+            //tempColorL = Color.red;
         } else {
             canMoveLeft = true;
-            tempColorL = Color.green;
+            //tempColorL = Color.green;
         }
         //Debug.DrawRay(capsuleCollider.bounds.center, new Vector2(-(capsuleCollider.bounds.extents.x + extraSideLength), 0), tempColorL, 0);
 
         // Right
-        RaycastHit2D wallCheckRCRight = Physics2D.Raycast(capsuleCollider.bounds.center, Vector2.right, 
-            capsuleCollider.bounds.extents.x + extraSideLength, wallLayerMask);
+        RaycastHit2D wallCheckRCRight = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, 
+            boxCollider.bounds.extents.x + extraSideLength, wallLayerMask);
         if (wallCheckRCRight.collider != null) {
             canMoveRight = false;
-            tempColorR = Color.red;
+            //tempColorR = Color.red;
         } else {
             canMoveRight = true;
-            tempColorR = Color.green;
+            //tempColorR = Color.green;
         }
         //Debug.DrawRay(capsuleCollider.bounds.center, new Vector2(capsuleCollider.bounds.extents.x + extraSideLength, 0), tempColorR, 0);
-
-        RaycastHit2D ledgeCheckRCRight = Physics2D.Raycast(new Vector2(capsuleCollider.bounds.center.x + capsuleCollider.bounds.extents.x, 
-            capsuleCollider.bounds.center.y + capsuleCollider.bounds.extents.y) ,
-            Vector2.right, extraLedgeLength, ledgeLayerMask);
-
-        RaycastHit2D ledgeCheckRCLeft = Physics2D.Raycast(new Vector2(capsuleCollider.bounds.center.x - capsuleCollider.bounds.extents.x, 
-            capsuleCollider.bounds.center.y + capsuleCollider.bounds.extents.y) ,
-            Vector2.left, extraLedgeLength, ledgeLayerMask);
-        
-        if (ledgeDetection) {
-            Debug.Log(ledgeDetection);
-            if (ledgeCheckRCLeft.collider != null || ledgeCheckRCRight.collider != null) {
-                canMove = false;
-                rb.isKinematic = true;
-                rb.velocity = new Vector2(0,0);
-                anim.SetTrigger("Ledge_Grab");
-                ledgeMovement = true;
-                if (ledgeCheckRCLeft.collider != null) {
-                    leftLedge = true;
-                    ledgeDetection = false;
-                    tempColorLedgeL = Color.red;
-                } else if (ledgeCheckRCRight.collider != null) {
-                    rightLedge = true;
-                    ledgeDetection = false;
-                    tempColorLedgeR = Color.red;
-                }
-            } else  {
-                tempColorLedgeL = Color.green;
-                tempColorLedgeR = Color.green;
-                leftLedge = false;
-                rightLedge = false;
-            }
-        }
-
-        Debug.DrawRay(new Vector2(capsuleCollider.bounds.center.x - capsuleCollider.bounds.extents.x, 
-            capsuleCollider.bounds.center.y + capsuleCollider.bounds.extents.y), Vector2.left * extraLedgeLength, tempColorLedgeL, 0); // LEFT DEBUG LEDGE
-        Debug.DrawRay(new Vector2(capsuleCollider.bounds.center.x + capsuleCollider.bounds.extents.x, 
-            capsuleCollider.bounds.center.y + capsuleCollider.bounds.extents.y), Vector2.right * extraLedgeLength, tempColorLedgeR, 0); // RIGHT DEBUG LEDGE
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -471,6 +427,19 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.tag == "Interactable_foliage") {
             Animator temp = col.gameObject.GetComponent<Animator>();
             temp.SetTrigger("Trigger");
+        }
+        if (col.gameObject.tag == "Ledge") {
+            if (ledgeDetection) {
+                canMove = false;
+                rb.isKinematic = true;
+                rb.velocity = new Vector2(0,0);
+                anim.SetTrigger("Ledge_Grab");
+                ledgeMovement = true;
+                if (flip) {
+                    rightLedge = true;
+                } else leftLedge = true; 
+                ledgeDetection = false;
+            }
         }
     }
 
@@ -512,7 +481,7 @@ public class PlayerMovement : MonoBehaviour
     private void isFalling() {
         if (rb.velocity.y < fallingThreshold) {
             falling = true;
-            if (!stompAction && isGrounded) {
+            if (!stompAction && !isGrounded) {
                 anim.SetTrigger("Falling");
             }
         } else {
@@ -536,7 +505,7 @@ public class PlayerMovement : MonoBehaviour
         } else if (rightLedge) {
             transform.position = new Vector2(trans.position.x + 0.7f, trans.position.y + 1.42f);
         }
-        
+        waitAfterLedgeClimb = true;
         climbLedgeToNormal();
     }
 
@@ -545,5 +514,20 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         rb.isKinematic = false;
         setLedgeDetection();
+        Invoke("setWaitAfterLedgeClimb", 0.5f);
+    }
+
+    private void setWaitAfterLedgeClimb() {
+        waitAfterLedgeClimb = false;
+        leftLedge = false;
+        rightLedge = false;
+    }
+
+    private void climbLedgeToIdleOrRun() {
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)) {
+            anim.SetTrigger("ClimbLedgeToRun");
+        } else {
+            anim.SetTrigger("ClimbLedgeToIdle");
+        }
     }
 }
