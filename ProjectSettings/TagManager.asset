@@ -12,6 +12,7 @@ TagManager:
   - Dust
   - Ceilling
   - Ledge
+  - Heart
   layers:
   - Default
   - TransparentFX

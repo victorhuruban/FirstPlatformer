@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     AudioManager audioManager;
     AnimatorSpawner animatorSpawner;
     GameObject ledgeCollider;
+    [SerializeField] HealthBar healthBar;
+    int maxHealthPoints = 100;
+    int currentHealth;
     [SerializeField] GameObject coin;
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpPower;
@@ -82,6 +85,9 @@ public class PlayerMovement : MonoBehaviour
         canMoveRight = true;
 
         ledgeDetection = true;
+
+        healthBar.SetMaxHealth(maxHealthPoints);
+        currentHealth = maxHealthPoints;
     }
 
     void Update() {
@@ -98,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
             }
             ManageMovement();
             ManageAttack(); 
+            ManageParry();
         } 
         if (ledgeMovement) {
             ManageLedgeMovement();
@@ -105,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
         moveHoldTimeDown();
         surroundingCheck();
         isFalling();
+        Debug.Log(trans.rotation.y);
     }
 
     // MOVEMENT SETTINGS
@@ -310,6 +318,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void ManageParry() {
+        if (Input.GetKeyDown(KeyCode.L)) {
+            anim.SetBool("TryParry", true);
+        }
+        if (Input.GetKeyUp(KeyCode.L)) {
+            anim.SetBool("TryParry", false);
+        }
+    }
+
     private void Attack(int damage, string type) {
         Collider2D[] enemiesToDamage = null;
         if (type == "J") {
@@ -323,11 +340,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnDrawGizmosSelected() {
+    /*void OnDrawGizmosSelected() {
         Gizmos.color = Color.red;
         //Gizmos.DrawWireCube(attackPositionJ.position, new Vector3(attackRangeXJ, attackRangeYJ, 1));
-        Gizmos.DrawWireCube(attackPositionK.position, new Vector3(attackRangeXK, attackRangeYK, 1));
-    }
+        //Gizmos.DrawWireCube(attackPositionK.position, new Vector3(attackRangeXK, attackRangeYK, 1));
+    }*/
 
     private void surroundingCheck() {
         // Ground Check
@@ -414,6 +431,12 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("StartRun", false);
             anim.SetTrigger("Damage");
             Invoke("setCanMove", 0.3f);
+            currentHealth -= 20;
+            healthBar.SetHealth(currentHealth);
+            if (currentHealth <= 0) {
+                setCanMove();
+                anim.SetTrigger("Death");
+            }
         }
     }
 
@@ -423,6 +446,19 @@ public class PlayerMovement : MonoBehaviour
             Vector2 loc = col.gameObject.transform.position;
             Instantiate(coin, loc, Quaternion.identity);
             Destroy(col.gameObject);
+        }
+        if (col.gameObject.tag == "Heart") {
+            if (currentHealth == maxHealthPoints) {
+                Debug.Log("Max health!");
+            } else if (currentHealth < maxHealthPoints) {
+                if (currentHealth + 20 > maxHealthPoints) {
+                    currentHealth = maxHealthPoints;
+                } else {
+                    currentHealth += 20;
+                }
+                Destroy(col.gameObject);
+                healthBar.SetHealth(currentHealth);
+            }
         }
         if (col.gameObject.tag == "Interactable_foliage") {
             Animator temp = col.gameObject.GetComponent<Animator>();

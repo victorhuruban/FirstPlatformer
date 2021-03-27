@@ -6,6 +6,11 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     
+    void Update() {
+        if (health <= 0) {
+            Destroy(this.gameObject);
+        }
+    }
 
     public void TakeDamage(int damage) {
         health -= damage;
