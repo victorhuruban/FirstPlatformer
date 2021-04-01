@@ -4,64 +4,88 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
-    Transform trans;
-    BoxCollider2D boxCollider;
-    Animator anim;
-    AudioManager audioManager;
-    AnimatorSpawner animatorSpawner;
-    GameObject ledgeCollider;
-    [SerializeField] HealthBar healthBar;
-    int maxHealthPoints = 100;
-    int currentHealth;
-    [SerializeField] GameObject coin;
-    [SerializeField] float moveSpeed;
-    [SerializeField] float jumpPower;
-    [SerializeField] float sprintSpeed;
-    [SerializeField] float stompSpeed;
-    [SerializeField] float knockBackForce;
-    [SerializeField] float fallingThreshold;
+    private Rigidbody2D rb;
+    private Transform trans;
+    private BoxCollider2D boxCollider;
+    private Animator anim;
+    private AudioManager audioManager;
+    private AnimatorSpawner animatorSpawner;
+    private GameObject ledgeCollider;
+
+    ////////////////
+    // HEALTH BAR //
+    ////////////////
+    [Header("Health Bar Variables")]
+    [SerializeField] private HealthBar healthBar;
+    [SerializeField] private int maxHealthPoints = 100;
+    private int currentHealth; // USED TO KEEP TRACK OF CURRENT HEALTH
+    
+    [Space]
+    /////////////////////
+    // PLAYER MOVEMENT //
+    /////////////////////
+    [Header("Movement Variables")]
+    [SerializeField] private float moveSpeed;
     [SerializeField] float moveHoldTimeLimit;
     [SerializeField] int crouchSpeed;
+    private bool isCrouched; // VARIABLE TO CHECK IF THE PLAYER IS CROUCHED
+    private bool canMove; // VARIABLE TO CHECK IS THE PLAYER CAN OR CANNOT MOVE
+    private bool isBasicPlayer; // FREDERICK MOVEMENT
+    private bool isSecondTypePlayer; // SECOND CHARACTER MOVEMENT
+    private bool isThirdTypePlayer; // THIRD CHARACTER MOVEMENT
+    private bool flip; // TRUE = RIGHT; FALSE = LEFT
+    private bool canMoveLeft; // CARIABLE TO CHECK IF THE PLAYER CAN MOVE LEFT
+    private bool canMoveRight; // CARIABLE TO CHECK IF THE PLAYER CAN MOVE RIGHT
+    private float notMoved; // CHECKS THE TIME YOU WERE HOLDING THE A OR D BUTTON BEFORE SWITCHING THE DIRECTIOn
+    private bool AOrDUp; // CHECK IT UP
+
+    [Space]
+    /////////////////
+    // PLAYER JUMP //
+    /////////////////
+    [Header("Jump Variables")]
+    [SerializeField] private float jumpPower;
+    [SerializeField] private float stompSpeed;
+    [SerializeField] private float knockBackForce;
+    [SerializeField] private float fallingThreshold; // MIGHT MAKE IT PRIVATE
+    [Tooltip("How much you jump if you hold down 'Space' button")]
+    [SerializeField] private float jumpTime; // HOW MUCH IT JUMPS IF YOU HOLD SPACE
+    private bool inAir; // CHECKS IF THE PLAYER IS IN AIR
+    private bool stompAction; // CHECKS IF YOU PRESSED 'S' WHILE IN AIR TO STOMP
+    private bool isGrounded; // CHECKS IF THE PLAYER IS GROUNDED FOR VARIOUS REASONS (ATTACK,JUMPING)
+    private bool falling; // CHECKS IF THE PLAYER IS CURRENTLY FALLING IN THE 'isFalling()' METHOD
+    private bool isJumping; // CHECKS IF YOU ARE HOLDING THE JUMP BUTTON TO KEEP PUSHING THE PLAYER UPWARDS
+    private float jumpTimeCounter; // USED TO KEEP TRACK OF JUMP BUTTON HOLDING
+    
+    [Space]
+    ///////////////////
+    // PLAYER Attack //
+    ///////////////////
+    [Header("Player Attack Variables")]
+    [Tooltip("GameObject Rectangle for Light Attack (J)")]
+    [SerializeField] private Transform attackPositionJ;
+    [Tooltip("GameObject Rectangle for Heavy/Upwards Attack (K)")]
+    [SerializeField] private Transform attackPositionK;
+    [SerializeField] private float attackRangeXJ;
+    [SerializeField] private float attackRangeYJ;
+    [SerializeField] private float attackRangeXK;
+    [SerializeField] private float attackRangeYK;
+    private bool airAttack; // CHECKS IF YOU PRESS ATTACK BUTTON IN AIR
+    
+    ///////////////////////////
+    // LEDGE CLIMB VARIABLES //
+    ///////////////////////////
+    private bool waitAfterLedgeClimb;// CHECKS IF YOU WAITED ENOUGH TIME BEFORE ANOTHER LEDGE CLIMB
+    private bool ledgeDetection; // CHECKS IF THE LEDGE COLLIDER COLLIDES WITH A LEDGE
+    private bool leftLedge; // CHECKS IF THE LEDGE IS ON THE LEFT SIDE
+    private bool rightLedge; // CHECKS IF THE LEDGE IS ON THE RIGHT SIDE
+    [Space]
+    [Header("Miscellaneous")]
     [SerializeField] private LayerMask platformLayerMask;
     [SerializeField] private LayerMask wallLayerMask;
-    [SerializeField] private LayerMask ledgeLayerMask;
     [SerializeField] private LayerMask enemyLayerMask;
-    bool inAir;
-    bool stompAction;
-    bool isGrounded;
-    bool isCrouched;
-    bool falling;
-    bool rotated;
-    bool sprinting;
-    bool jumpOrFall;
-    bool justFalled;
-    bool isJumping;
-    float jumpTimeCounter;
-    public float jumpTime;
-    bool canMove;
-    bool isBasicPlayer;
-    bool isSecondTypePlayer;
-    bool isThirdTypePlayer;
-    bool flip; // TRUE = RIGHT; FALSE = LEFT
-    bool AOrDUp;
-    float moveHoldTime;
-    bool moveHoldTimeDownTrigger;
-    bool canMoveLeft;
-    bool canMoveRight;
-    bool airAttack;
-    bool ledgeMovement;
-    bool ledgeDetection;
-    bool leftLedge;
-    bool rightLedge;
-    bool waitAfterLedgeClimb;
-    float notMoved;
-    [SerializeField] Transform attackPositionJ;
-    [SerializeField] Transform attackPositionK;
-    public float attackRangeXJ;
-    public float attackRangeYJ;
-    public float attackRangeXK;
-    public float attackRangeYK;
+    [Tooltip("The particle prefab for when you collect a coin")]
+    [SerializeField] private GameObject coin;
 
     void Start()
     {
@@ -75,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         isGrounded = true;
         flip = true;
-        moveHoldTimeDownTrigger = false;
         
         isBasicPlayer = true;
         isSecondTypePlayer = false;
@@ -91,7 +114,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update() {
-        Debug.Log(ledgeCollider);
         if (canMove) {
             if (Input.GetKeyDown(KeyCode.Q)) {
                 // Transform to first character
@@ -106,13 +128,8 @@ public class PlayerMovement : MonoBehaviour
             ManageAttack(); 
             ManageParry();
         } 
-        if (ledgeMovement) {
-            ManageLedgeMovement();
-        }
-        moveHoldTimeDown();
         surroundingCheck();
         isFalling();
-        Debug.Log(trans.rotation.y);
     }
 
     // MOVEMENT SETTINGS
@@ -128,7 +145,6 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("Run", false);
                 anim.SetBool("StartRun", false); 
                 anim.SetBool("StopRun", true);
-                moveHoldTimeDownTrigger = false;
 
             } else if ((Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))) {
                 anim.SetBool("StopRun", false);
@@ -146,25 +162,19 @@ public class PlayerMovement : MonoBehaviour
                     } 
                 }
             } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)) {
-                moveHoldTimeDownTrigger = true;
                 anim.SetBool("StopRun", false);
                 if (Input.GetKey(KeyCode.D)) {
                     if (canMoveRight) {
                         if (!isCrouched) {
                             AOrDUp = false;
-                            if (moveHoldTime < 0.5f) {
-                                moveHoldTime += Time.deltaTime;
+                            Flip(0);
+                            MovePlayer(moveSpeed, 1f, 1);
+                            if (!falling) {
+                                anim.SetBool("StartRun", true);
+                            } else if (falling) {
+                                anim.SetTrigger("Falling");
                             }
-                            if (moveHoldTime > moveHoldTimeLimit) {
-                                Flip(0);
-                                MovePlayer(moveSpeed, 1f, 1);
-                                if (!falling) {
-                                    anim.SetBool("StartRun", true);
-                                } else if (falling) {
-                                    anim.SetTrigger("Falling");
-                                }
-                            } 
-                            if (notMoved < 0.04) {
+                            if (notMoved < 0.09) {
                                 notMoved += Time.deltaTime;
                             } 
                         }
@@ -176,19 +186,14 @@ public class PlayerMovement : MonoBehaviour
                     if (canMoveLeft) {
                         if (!isCrouched) {
                             AOrDUp = false;
-                            if (moveHoldTime < 0.5f) {
-                                moveHoldTime += Time.deltaTime;
+                            Flip(1);
+                            MovePlayer(moveSpeed, 1f, 0);
+                            if (!falling) {
+                                anim.SetBool("StartRun", true);
+                            } else if (falling) {
+                                anim.SetTrigger("Falling");
                             }
-                            if (moveHoldTime > moveHoldTimeLimit) {
-                                Flip(1);
-                                MovePlayer(moveSpeed, 1f, 0);
-                                if (!falling) {
-                                    anim.SetBool("StartRun", true);
-                                } else if (falling) {
-                                    anim.SetTrigger("Falling");
-                                }
-                            } 
-                            if (notMoved < 0.04) {
+                            if (notMoved < 0.09) {
                                 notMoved += Time.deltaTime;
                             }  
                         }
@@ -201,14 +206,16 @@ public class PlayerMovement : MonoBehaviour
             } else {
                 if (notMoved > 0) {
                     notMoved -= Time.deltaTime;
+                } else if (notMoved < 0) {
+                    anim.SetBool("Run", false);
+                    anim.SetBool("StartRun", false); 
                 }
-                anim.SetBool("Run", false);
-                anim.SetBool("StartRun", false); 
+                
             }
 
             if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
                 AOrDUp = true;
-                if (moveHoldTime < moveHoldTimeLimit) {
+                if (notMoved > 0) {
                     if (Input.GetKeyUp(KeyCode.A)) {
                         Flip(1);
                     }
@@ -226,7 +233,6 @@ public class PlayerMovement : MonoBehaviour
                 if (isCrouched) {
                     anim.SetBool("CrouchIdleToWalk", false);
                 }
-                moveHoldTimeDownTrigger = false;
             } 
             // JUMP CODE
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
@@ -283,10 +289,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void ManageLedgeMovement() {
-        anim.SetTrigger("Climb_Ledge");
-    }
-
     private void ManageAttack() {
         if (isBasicPlayer && canMove) {
             if (Input.GetKeyDown(KeyCode.J) && isGrounded) {
@@ -336,7 +338,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         for (int i = 0; i < enemiesToDamage.Length; i++) {
-            enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+            enemiesToDamage[i].GetComponent<EnemyAIFlying>().TakeDamage(damage);
         }
     }
 
@@ -352,6 +354,7 @@ public class PlayerMovement : MonoBehaviour
         float extraSideLength = .05f;
         RaycastHit2D groundCheckRC = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size,  0f, Vector2.down, extraHeightTest, platformLayerMask);
         bool groundCheckRCbool = groundCheckRC.collider != null;
+        //Color tempColor = Color.green;
         //Color tempColorL = Color.green;
         //Color tempColorR = Color.green;
         //Color tempColorLedgeL = Color.green;
@@ -381,9 +384,9 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
         // GROUND CHECK DRAWRAY DEBUG
-        //Debug.DrawRay(capsuleCollider.bounds.center + new Vector3(capsuleCollider.bounds.extents.x, 0), Vector2.down * (capsuleCollider.bounds.extents.y + extraHeightTest), tempColor, 0, true);
-        //Debug.DrawRay(capsuleCollider.bounds.center + new Vector3(-capsuleCollider.bounds.extents.x, 0), Vector2.down * (capsuleCollider.bounds.extents.y + extraHeightTest), tempColor, 0, true);
-        //Debug.DrawRay(capsuleCollider.bounds.center + new Vector3(-capsuleCollider.bounds.extents.x, -capsuleCollider.bounds.extents.y - extraHeightTest), Vector2.right * (capsuleCollider.bounds.extents.y - extraHeightTest), tempColor, 0, true);
+        //Debug.DrawRay(boxCollider.bounds.center + new Vector3(boxCollider.bounds.extents.x, 0), Vector2.down * (boxCollider.bounds.extents.y + extraHeightTest), tempColor, 0, true);
+        //Debug.DrawRay(boxCollider.bounds.center + new Vector3(-boxCollider.bounds.extents.x, 0), Vector2.down * (boxCollider.bounds.extents.y + extraHeightTest), tempColor, 0, true);
+        //Debug.DrawRay(boxCollider.bounds.center + new Vector3(-boxCollider.bounds.extents.x, -boxCollider.bounds.extents.y - extraHeightTest), Vector2.right * (boxCollider.bounds.extents.y - extraHeightTest), tempColor, 0, true);
 
         /////////////
 
@@ -399,7 +402,7 @@ public class PlayerMovement : MonoBehaviour
             canMoveLeft = true;
             //tempColorL = Color.green;
         }
-        //Debug.DrawRay(capsuleCollider.bounds.center, new Vector2(-(capsuleCollider.bounds.extents.x + extraSideLength), 0), tempColorL, 0);
+        //Debug.DrawRay(boxCollider.bounds.center, new Vector2(-(boxCollider.bounds.extents.x + extraSideLength), 0), tempColorL, 0);
 
         // Right
         RaycastHit2D wallCheckRCRight = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, 
@@ -411,7 +414,7 @@ public class PlayerMovement : MonoBehaviour
             canMoveRight = true;
             //tempColorR = Color.green;
         }
-        //Debug.DrawRay(capsuleCollider.bounds.center, new Vector2(capsuleCollider.bounds.extents.x + extraSideLength, 0), tempColorR, 0);
+        //Debug.DrawRay(boxCollider.bounds.center, new Vector2(boxCollider.bounds.extents.x + extraSideLength, 0), tempColorR, 0);
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -470,7 +473,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.isKinematic = true;
                 rb.velocity = new Vector2(0,0);
                 anim.SetTrigger("Ledge_Grab");
-                ledgeMovement = true;
+                anim.SetTrigger("Climb_Ledge");
                 if (flip) {
                     rightLedge = true;
                 } else leftLedge = true; 
@@ -525,16 +528,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void moveHoldTimeDown() {
-        if (!moveHoldTimeDownTrigger && moveHoldTime >= 0) {
-            moveHoldTime -= Time.deltaTime;
-        }
-    }
-
-    private void setLedgeDetection() {
-        ledgeDetection = true;
-    }
-
     private void setNewLedgePosition() {
         if (leftLedge) {
             transform.position = new Vector2(trans.position.x - 0.7f, trans.position.y + 1.42f);
@@ -546,10 +539,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void climbLedgeToNormal() {
-        ledgeMovement = false;
         canMove = true;
         rb.isKinematic = false;
-        setLedgeDetection();
+        ledgeDetection = true;
         Invoke("setWaitAfterLedgeClimb", 0.5f);
     }
 
